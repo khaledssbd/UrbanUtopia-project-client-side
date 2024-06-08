@@ -65,10 +65,10 @@ const Footer = () => {
               <FaLinkedin />
             </a>
           </div>
-          <h4 className="text-white text-xs sm:text-base md:text-lg font-normal">
-            Address:-
+          <h4 className="text-white text-xs sm:text-sm">Address:-</h4>
+          <h4 className="text-white text-xs sm:text-sm">
+            UrbanUtopia, Academy Road, Feni Sadar, Feni.
           </h4>
-          <h4 className="text-white text-xs sm:text-base">UrbanUtopia, Academy Road, Feni Sadar, Feni.</h4>
           <h4 className="text-gray-300 text-xs sm:text-sm">
             Email: khaled@PH.com
           </h4>
