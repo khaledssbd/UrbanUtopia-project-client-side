@@ -1,5 +1,5 @@
-import { Typewriter } from 'react-simple-typewriter';
 import featuredImg from '../../../assets/rooms/room-2.jpg';
+import { Typewriter } from 'react-simple-typewriter';
 
 const AboutTheBuilding = () => {
   
