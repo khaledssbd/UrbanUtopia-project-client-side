@@ -20,11 +20,7 @@ const Register = () => {
   const [registering, setRegistering] = useState(false);
   const axiosPublic = useAxiosPublic();
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, formState: { errors }} = useForm();
 
   const {
     user,
