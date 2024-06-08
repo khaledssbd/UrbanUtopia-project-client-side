@@ -12,15 +12,7 @@ import Swal from 'sweetalert2';
 import Loading from '../../components/AllLootie/Loading';
 
 const Login = () => {
-  const {
-    user,
-    logIn,
-    loading,
-    setLoading,
-    googleProvider,
-    signInWithSocial,
-    facebookProvider,
-    getPassWordResetMail,
+  const { user, logIn, loading, setLoading, googleProvider, signInWithSocial, facebookProvider, getPassWordResetMail,
   } = useAuth();
 
   const navigate = useNavigate();
