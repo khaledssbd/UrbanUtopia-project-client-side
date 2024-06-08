@@ -75,11 +75,10 @@ const NavBar = () => {
     </>
   );
 
-  if (loading)
-    return <span className="loading loading-bars loading-md"></span>;
+  if (loading) return <span className="loading loading-bars loading-md"></span>;
 
   return (
-    <div className="navbar fixed z-20 bg-opacity-30 bg-black text-white max-w-screen-xl">
+    <div className="navbar fixed z-20 bg-opacity-30 bg-black text-white max-w-[calc(100vw-25px)] md:max-w-[calc(100vw-65px)] normal:max-w-[calc(100vw-100px)]  xl:max-w-[calc(100vw-160px)]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -107,7 +106,7 @@ const NavBar = () => {
         </div>
         <Link
           to="/"
-          className="btn -ml-6 sm:-ml-0 btn-ghost hover:bg-black hover:text-black text-2xl sm:text-3xl font-bold"
+          className="btn -ml-6 sm:-ml-0 btn-ghost hover:bg-black hover:text-black text-xl sm:text-3xl font-bold"
         >
           <button className="flex justify-center items-center gap-1">
             <img

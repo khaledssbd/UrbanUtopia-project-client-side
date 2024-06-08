@@ -21,7 +21,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Small Screen Navbar */}
-      <div className="text-gray-800 flex justify-between md:hidden">
+      <div className="flex justify-between md:hidden">
         <div>
           <div className="block cursor-pointer p-4 font-bold text-2xl md:text-3xl">
             <Link to="/">
