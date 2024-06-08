@@ -20,7 +20,7 @@ const DashboardHome = () => {
         living experience begins.
       </h5>
       <h5 className="text-lg mt-3">Warm regards,</h5>
-      <h5>The UrbanUtopia Team</h5>
+      <h5 className="text-lg">The UrbanUtopia Team</h5>
     </div>
   );
 };

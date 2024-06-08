@@ -6,12 +6,12 @@ import useAuth from '../../../hooks/useAuth';
 
 const AnnouncementDetails = () => {
   const { user, loading } = useAuth();
-  const axiosSecure = useAxiosSecure();
   const { id } = useParams();
+  const axiosSecure = useAxiosSecure();
 
   // fetch announcement on start like useEffect
   const { data: announcement = {}, isLoading } = useQuery({
-    queryKey: ['announcement'],
+    queryKey: ['announcement', id],
     enabled: !loading && !!user?.email,
     queryFn: async () => {
       const { data } = await axiosSecure.get(
