@@ -11,14 +11,12 @@ import { Link } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import xButtonSVG from '../../../assets/x-button.svg';
 import toast from 'react-hot-toast';
-import useAxiosPublic from '../../../hooks/useAxiosPublic';
 
 const ManageAnnouncements = () => {
   const { user } = useAuth();
   const [showUpdateModal, setShowUpdateModal] = useState(false);
   const [announcementToUpdate, setAnnouncementToUpdate] = useState({});
   const axiosSecure = useAxiosSecure();
-  const axiosPublic = useAxiosPublic();
   const QueryClient = useQueryClient();
 
   // fetch data on start like useEffect
@@ -69,7 +67,7 @@ const ManageAnnouncements = () => {
 
   // get data and show modal to update a announcement
   const getDataForUpdate = async id => {
-    const { data } = await axiosPublic.get(`/announcements/${id}`);
+    const { data } = await axiosSecure.get(`/announcements/${id}?email=${user?.email}`);
     setAnnouncementToUpdate(data);
     setShowUpdateModal(true);
   };
@@ -157,7 +155,7 @@ const ManageAnnouncements = () => {
               <h3 className="mx-5 font-medium text-base md:text-lg lg:text-xl my-3 text-black">
                 {announcement.title.slice(0, 30)}...
               </h3>
-              <h3 className="mx-5 mb-3  text-base text-black font-normal">
+              <h3 className="mx-5 mb-3 text-base text-black font-normal flex-grow">
                 Description: {announcement.description.slice(0, 200)}...
               </h3>
 

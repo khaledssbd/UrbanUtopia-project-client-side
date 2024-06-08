@@ -230,7 +230,7 @@ const ManageApartments = () => {
                       apart.status === 'available' &&
                       'bg-yellow-100/90 text-yellow-600'
                     } ${
-                      apart.status === 'unavailble' &&
+                      apart.status === 'unavailable' &&
                       'bg-emerald-100/90 text-emerald-600'
                     }`}
                   >
@@ -351,7 +351,9 @@ const ManageApartments = () => {
                       name="room"
                     />
 
-                    <label className="block mt-4 mb-1">Image</label>
+                    <label className="block mt-4 mb-1 text-black text-sm">
+                      Image
+                    </label>
                     <input
                       required
                       type="file"

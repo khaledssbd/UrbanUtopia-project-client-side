@@ -189,7 +189,7 @@ const CheckoutForm = () => {
           onSubmit={handleCoupon}
         >
           <div>
-            <label className="block mb-1 text-left">Enter Coupon</label>
+            <label className="block mb-1 text-left text-black">Enter Coupon</label>
             <input
               className="w-full p-2 border-2 rounded-lg border-green-500 focus:outline-red-500"
               type="text"

@@ -1,6 +1,5 @@
 import heroImg from '../../../assets/rooms/room-6.jpg';
 import niceImg from '../../../assets/nice.png';
-
 import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {

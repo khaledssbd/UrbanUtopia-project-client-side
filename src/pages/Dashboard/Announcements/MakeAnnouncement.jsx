@@ -3,10 +3,12 @@ import { Typewriter } from 'react-simple-typewriter';
 import useAuth from '../../../hooks/useAuth';
 import toast from 'react-hot-toast';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { useNavigate } from 'react-router-dom';
 
 const MakeAnnouncement = () => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
+  const navigate = useNavigate();
 
   const handleAddAnnouncements = async e => {
     e.preventDefault();
@@ -27,6 +29,7 @@ const MakeAnnouncement = () => {
       if (data.insertedId) {
         form.reset();
         toast.success('Announcement added successfully');
+        navigate('/dashboard/manage-announcements');
       } else {
         toast.error('Something went wrong');
       }
