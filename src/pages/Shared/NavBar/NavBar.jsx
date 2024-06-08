@@ -6,11 +6,9 @@ import toast from 'react-hot-toast';
 import { Tooltip } from 'react-tooltip';
 import MOON from '../../../assets/moon.svg';
 import SUN from '../../../assets/sun.svg';
-import useRole from '../../../hooks/useRole';
 
 const NavBar = () => {
   const { user, logOut, loading } = useAuth();
-  const [role, isRoleLoading] = useRole();
 
   // theme change part start
   const [theme, setTheme] = useState();
@@ -77,7 +75,7 @@ const NavBar = () => {
     </>
   );
 
-  if (loading || isRoleLoading)
+  if (loading)
     return <span className="loading loading-bars loading-md"></span>;
 
   return (
