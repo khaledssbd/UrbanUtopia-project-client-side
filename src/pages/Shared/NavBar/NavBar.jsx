@@ -12,8 +12,6 @@ const NavBar = () => {
   const { user, logOut, loading } = useAuth();
   const [role, isRoleLoading] = useRole();
 
-  console.log(role, isRoleLoading);
-
   // theme change part start
   const [theme, setTheme] = useState();
   useEffect(() => {
@@ -178,36 +176,15 @@ const NavBar = () => {
                 <li className="bg-green-500 font-bold text-left px-4 py-2 rounded-sm">
                   {user?.displayName}
                 </li>
-                {role === 'user' && (
-                  <li>
-                    <Link
-                      to="/dashboard"
-                      className="hover:bg-blue-700 hover:text-white font-bold"
-                    >
-                      Dashboard
-                    </Link>
-                  </li>
-                )}
-                {role === 'member' && (
-                  <li>
-                    <Link
-                      to="/dashboard"
-                      className="hover:bg-blue-700 hover:text-white font-bold"
-                    >
-                      Dashboard
-                    </Link>
-                  </li>
-                )}
-                {role === 'admin' && (
-                  <li>
-                    <Link
-                      to="/dashboard"
-                      className="hover:bg-blue-700 hover:text-white font-bold"
-                    >
-                      Dashboard
-                    </Link>
-                  </li>
-                )}
+
+                <li>
+                  <Link
+                    to="/dashboard"
+                    className="hover:bg-blue-700 hover:text-white font-bold"
+                  >
+                    Dashboard
+                  </Link>
+                </li>
 
                 <li>
                   <button
