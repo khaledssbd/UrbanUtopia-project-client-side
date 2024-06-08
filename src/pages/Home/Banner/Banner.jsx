@@ -26,7 +26,7 @@ const Banner = () => {
       autoPlay={true}
       interval={2000}
       infiniteLoop={true}
-      //       showThumbs={false}
+      // showThumbs={false}
       showStatus={false}
       onClickItem={handleItemClick}
     >
