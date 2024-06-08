@@ -12,7 +12,6 @@ import banner8 from '../../../assets/rooms/room-8.jpg';
 import banner9 from '../../../assets/rooms/room-9.jpg';
 import banner10 from '../../../assets/rooms/room-10.jpg';
 import banner11 from '../../../assets/rooms/room-11.jpg';
-
 import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
