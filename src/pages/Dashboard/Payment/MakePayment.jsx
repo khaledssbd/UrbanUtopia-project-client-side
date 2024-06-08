@@ -92,6 +92,7 @@ const MakePayment = () => {
       <div className="md:mt-8 mx-auto w-full md:w-2/3">
         <form onSubmit={handlePayRent}>
           <div className="grid grid-cols-2 gap-8">
+
             {/* Left side */}
             <div className="flex-1">
               <label className="block mt-4 mb-1 text-sm md:text-base">
@@ -142,6 +143,7 @@ const MakePayment = () => {
                 name="block"
               />
             </div>
+            
             {/* Right side */}
             <div className="flex-1">
               <label className="block mt-4 mb-1 text-sm md:text-base">
