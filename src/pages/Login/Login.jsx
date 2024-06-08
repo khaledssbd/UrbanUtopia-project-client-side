@@ -12,7 +12,15 @@ import Swal from 'sweetalert2';
 import Loading from '../../components/AllLootie/Loading';
 
 const Login = () => {
-  const { user, logIn, loading, setLoading, googleProvider, signInWithSocial, facebookProvider, getPassWordResetMail,
+  const {
+    user,
+    logIn,
+    loading,
+    setLoading,
+    googleProvider,
+    signInWithSocial,
+    facebookProvider,
+    getPassWordResetMail,
   } = useAuth();
 
   const navigate = useNavigate();
@@ -37,37 +45,9 @@ const Login = () => {
       setLoading(true);
       await logIn(email, password);
 
-      // if (!result?.user?.emailVerified) {
-      //   logOut();
-      //   await verifyUser(result.user);
-      //   setLogging(false);
-      //   Swal.fire({
-      //     title: 'Alert!',
-      //     text: 'You must verify your email before login. Check your inbox.',
-      //     icon: 'error',
-      //     confirmButtonColor: '#3085d6',
-      //     confirmButtonText: 'Ok',
-      //   }).then(async result => {
-      //     if (result.isConfirmed) {
-      //       window.location.reload();
-      //     }
-      //   });
-      // } else {
-
       setLoading(false);
       navigate(from, { replace: true });
-
-      Swal.fire({
-        title: 'Wow!',
-        text: 'Successfully logged-in',
-        icon: 'success',
-        confirmButtonColor: '#3085d6',
-        confirmButtonText: 'Ok',
-      }).then(async result => {
-        if (result.isConfirmed) {
-          // window.location.reload();
-        }
-      });
+      toast.success('Successfully logged-in');
 
       // Swal.fire({
       //   title: 'Account logged-in successfully!',
@@ -78,8 +58,6 @@ const Login = () => {
       //     popup: 'animate__animated animate__fadeOutUp',
       //   },
       // });
-
-      // }
     } catch (error) {
       setLoading(false);
       if (error.message === 'Firebase: Error (auth/invalid-credential).') {
@@ -126,9 +104,7 @@ const Login = () => {
 
   const socialSignIn = async provider => {
     await signInWithSocial(provider);
-
     navigate(from, { replace: true });
-    window.location.reload();
     toast.success('Successfully logged-in');
   };
 
@@ -151,10 +127,6 @@ const Login = () => {
       </div>
     );
   }
-
-  // if (user) {
-  //   return navigate('/');
-  // }
 
   if (user) {
     return <Navigate to="/"></Navigate>;

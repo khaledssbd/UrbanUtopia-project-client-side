@@ -122,7 +122,6 @@ const Register = () => {
     if (data.insertedId) {
       setRegistering(false);
       navigate(location?.state ? location.state : '/');
-      window.location.reload();
       toast.success('Successfully registered');
     }
   };
