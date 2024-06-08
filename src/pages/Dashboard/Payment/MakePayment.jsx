@@ -94,7 +94,7 @@ const MakePayment = () => {
           <div className="grid grid-cols-2 gap-8">
             {/* Left side */}
             <div className="flex-1">
-              <label className="block mt-4 mb-1 text-black text-sm md:text-base">
+              <label className="block mt-4 mb-1 text-sm md:text-base">
                 Your email
               </label>
               <input
@@ -106,7 +106,7 @@ const MakePayment = () => {
                 name="email"
               />
 
-              <label className="block mt-6 mb-1 text-black text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base">
                 Apartment Number
               </label>
               <input
@@ -118,7 +118,7 @@ const MakePayment = () => {
                 name="apartment"
               />
 
-              <label className="block mt-6 mb-1 text-black text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base">
                 Floor Number
               </label>
               <input
@@ -130,7 +130,7 @@ const MakePayment = () => {
                 name="floor"
               />
 
-              <label className="block mt-6 mb-1 text-black text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base">
                 Block Name
               </label>
               <input
@@ -144,7 +144,7 @@ const MakePayment = () => {
             </div>
             {/* Right side */}
             <div className="flex-1">
-              <label className="block mt-4 mb-1 text-black text-sm md:text-base">
+              <label className="block mt-4 mb-1 text-sm md:text-base">
                 Number of Rooms
               </label>
               <input
@@ -156,7 +156,7 @@ const MakePayment = () => {
                 name="room"
               />
 
-              <label className="block mt-6 mb-1 text-black text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base">
                 Rent in $
               </label>
               <input
@@ -168,7 +168,7 @@ const MakePayment = () => {
                 name="rent"
               />
 
-              <label className="block mt-6 mb-1 text-black text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base">
                 Month
               </label>
               <select
