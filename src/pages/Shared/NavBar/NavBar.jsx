@@ -78,7 +78,7 @@ const NavBar = () => {
   if (loading) return <span className="loading loading-bars loading-md"></span>;
 
   return (
-    <div className="navbar fixed z-20 bg-opacity-30 bg-black text-white max-w-[calc(100vw-25px)] md:max-w-[calc(100vw-65px)] normal:max-w-[calc(100vw-100px)]  xl:max-w-[calc(100vw-160px)]">
+    <div className="navbar fixed z-20 bg-opacity-30 bg-black text-white max-w-screen-xl">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

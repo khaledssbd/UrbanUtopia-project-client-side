@@ -12,7 +12,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="max-w-screen-xl mx-auto text-center font-fira px-3 sm:px-5 md:px-8 lg:px-12 xl:px-0">
+      <div className="max-w-screen-xl mx-auto text-center font-fira">
         <ScrollRestoration />
         <NavBar />
         <div className="min-h-[calc(100vh-270px)]">
