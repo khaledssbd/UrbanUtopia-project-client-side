@@ -91,15 +91,14 @@ const MakePayment = () => {
       </h3>
       <div className="md:mt-8 mx-auto w-full md:w-2/3">
         <form onSubmit={handlePayRent}>
-          <div className="grid grid-cols-2 gap-8">
-
+          <div className="grid grid-cols-1 md:grid-cols-2 text-center gap-8">
             {/* Left side */}
             <div className="flex-1">
-              <label className="block mt-4 mb-1 text-sm md:text-base">
+              <label className="block mt-4 mb-1 text-sm md:text-base text-left">
                 Your email
               </label>
               <input
-                className="md:w-full p-2 border rounded-lg border-red-500 text-sm"
+                className="w-full p-2 border rounded-lg border-red-500 text-sm"
                 type="email"
                 required
                 readOnly
@@ -107,11 +106,11 @@ const MakePayment = () => {
                 name="email"
               />
 
-              <label className="block mt-6 mb-1 text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base text-left">
                 Apartment Number
               </label>
               <input
-                className="md:w-full p-2 border rounded-lg border-red-500 text-sm"
+                className="w-full p-2 border rounded-lg border-red-500 text-sm"
                 type="number"
                 required
                 readOnly
@@ -119,11 +118,11 @@ const MakePayment = () => {
                 name="apartment"
               />
 
-              <label className="block mt-6 mb-1 text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base text-left">
                 Floor Number
               </label>
               <input
-                className="md:w-full p-2 border rounded-lg border-red-500 text-sm"
+                className="w-full p-2 border rounded-lg border-red-500 text-sm"
                 type="number"
                 required
                 readOnly
@@ -131,11 +130,11 @@ const MakePayment = () => {
                 name="floor"
               />
 
-              <label className="block mt-6 mb-1 text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base text-left">
                 Block Name
               </label>
               <input
-                className="md:w-full p-2 border rounded-lg border-red-500 text-sm"
+                className="w-full p-2 border rounded-lg border-red-500 text-sm"
                 type="text"
                 required
                 readOnly
@@ -143,14 +142,14 @@ const MakePayment = () => {
                 name="block"
               />
             </div>
-            
+
             {/* Right side */}
             <div className="flex-1">
-              <label className="block mt-4 mb-1 text-sm md:text-base">
+              <label className="block mt-4 mb-1 text-sm md:text-base text-left">
                 Number of Rooms
               </label>
               <input
-                className="md:w-full p-2 border rounded-lg border-red-500 text-sm"
+                className="w-full p-2 border rounded-lg border-red-500 text-sm"
                 type="number"
                 required
                 readOnly
@@ -158,11 +157,11 @@ const MakePayment = () => {
                 name="room"
               />
 
-              <label className="block mt-6 mb-1 text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base text-left">
                 Rent in $
               </label>
               <input
-                className="md:w-full p-2 border rounded-lg border-red-500 text-sm"
+                className="w-full p-2 border rounded-lg border-red-500 text-sm"
                 type="text"
                 required
                 readOnly
@@ -170,12 +169,12 @@ const MakePayment = () => {
                 name="rent"
               />
 
-              <label className="block mt-6 mb-1 text-sm md:text-base">
+              <label className="block mt-6 mb-1 text-sm md:text-base text-left">
                 Month
               </label>
               <select
                 name="month"
-                className="md:w-full p-2 border rounded-lg border-green-500 text-sm"
+                className="w-full p-2 border rounded-lg border-green-500 text-sm"
                 type="text"
                 required
                 placeholder="Month"
