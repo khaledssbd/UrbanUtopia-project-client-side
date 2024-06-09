@@ -66,9 +66,11 @@ const ManageMembers = () => {
       <Helmet>
         <title>UrbanUtopia | Manage Members</title>
       </Helmet>
-      <div className="flex justify-evenly">
-        <h3 className="text-xl md:text-4xl">Manage Members ({allMembers.length})</h3>
-      </div>
+
+      <h3 className="text-xl md:text-4xl text-center">
+        Manage Members ({allMembers.length})
+      </h3>
+
       <div>
         {allMembers.length > 0 ? (
           <div className="overflow-x-auto rounded-2xl border border-black mt-8">
