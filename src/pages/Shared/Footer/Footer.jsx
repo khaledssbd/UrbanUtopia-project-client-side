@@ -17,11 +17,7 @@ const Footer = () => {
             data-aos="flip-up"
           >
             <button className="flex justify-center items-center gap-2 md:gap-3">
-              <img
-                className="w-5 md:w-8 rounded-lg"
-                src="/favicon.png"
-                alt=""
-              />
+              <img className="w-5 md:w-8 rounded-lg" src="/logo.png" alt="" />
               <span className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
                 UrbanUtopia
               </span>
