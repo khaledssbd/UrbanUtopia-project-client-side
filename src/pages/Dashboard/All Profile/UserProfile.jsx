@@ -30,7 +30,7 @@ const UserProfile = () => {
   }
 
   return (
-    <div className="py-5">
+    <div>
       <Helmet>
         <title>UrbanUtopia | User Profile</title>
       </Helmet>
