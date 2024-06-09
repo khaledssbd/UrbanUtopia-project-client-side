@@ -61,8 +61,8 @@ const PaymentHistory = () => {
         <title>UrbanUtopia | Payment History</title>
       </Helmet>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-5 sm:gap-12 mt-12">
-        <div className="flex gap-12 justify-between items-center">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-5 sm:gap-12 mt-3 md:mt-10">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-12 justify-between items-center">
           <div className="flex p-1 overflow-hidden border rounded-lg focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
             <input
               className="px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent"
@@ -81,7 +81,7 @@ const PaymentHistory = () => {
       <div>
         {showSearchResult && (
           <div>
-            <h3 className="my-10 text-2xl font-bold text-center">
+            <h3 className="my-8 text-2xl font-bold text-center">
               Search Result
             </h3>
             <div>
@@ -143,7 +143,7 @@ const PaymentHistory = () => {
         )}
       </div>
 
-      <h3 className="text-3xl text-center mt-12">
+      <h3 className="text-2xl md:text-3xl text-center mt-5 md:mt-10">
         Total Payments: {payments.length}
       </h3>
 

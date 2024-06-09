@@ -28,7 +28,6 @@ const Announcements = () => {
     );
   }
 
-  
   return (
     <div className="my-10 sm:px-6">
       <Helmet>
@@ -42,7 +41,7 @@ const Announcements = () => {
         >
           <Typewriter
             words={['- Announcements']}
-            loop={50}
+            loop={550}
             cursor
             cursorStyle="_"
             typeSpeed={70}
