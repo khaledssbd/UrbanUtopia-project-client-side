@@ -56,7 +56,7 @@ const CheckoutForm = () => {
         });
     }
   }, [axiosSecure, rentToPay, user?.email]);
-  
+
   const handlePayment = async e => {
     e.preventDefault();
 
@@ -180,7 +180,7 @@ const CheckoutForm = () => {
 
   return (
     <div>
-      <h3 className="text-2xl text-center font-bold mt-20 mb-12 text-blue-500">
+      <h3 className="text-2xl text-center font-bold pt-5 md:pt-20 pb-10 text-blue-500">
         Pay: ${rentToPay}
       </h3>
       <div className="w-full md:w-1/2 mx-auto bg-gray-200 p-10 border-2 border-gray-300 rounded-md text-center">
@@ -189,7 +189,9 @@ const CheckoutForm = () => {
           onSubmit={handleCoupon}
         >
           <div>
-            <label className="block mb-1 text-left text-black">Enter Coupon</label>
+            <label className="block mb-1 text-left text-black">
+              Enter Coupon
+            </label>
             <input
               className="w-full p-2 border-2 rounded-lg border-green-500 focus:outline-red-500"
               type="text"
