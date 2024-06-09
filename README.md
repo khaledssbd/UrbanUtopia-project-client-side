@@ -59,6 +59,8 @@
 - PrivateRoute, adminRoute, memberRoute to stop one to browse others pages
 - Different Dashboard for Admin, Member and user
 - Local Storage and API post configuration with Protected route
+- jwt configuration to configure security
+- react-hook-form in registration
 - Adaptable & Robust
 - No lorem text and no javascript default alert
 
@@ -73,6 +75,7 @@
 - npm i lottie-react
 - npm i react-tooltip
 - npm i react-hot-toast
+- npm i react-hook-form
 - npm i react-router-dom
 - npm i react-helmet-async
 - npm install react-tooltip

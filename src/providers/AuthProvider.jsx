@@ -65,8 +65,6 @@ const AuthProvider = ({ children }) => {
     return sendPasswordResetEmail(auth, email);
   };
 
-
-
   const getToken = async email => {
     const { data } = await axiosPublic.post('/getJwtToken', email);
     localStorage.setItem('access-token', data.token);
@@ -78,7 +76,7 @@ const AuthProvider = ({ children }) => {
       const userEmail = currentUser?.email || user?.email;
       const objectEmail = { email: userEmail };
       setUser(currentUser);
-
+      
       // if user exists then issue a token
       if (currentUser) {
         getToken(objectEmail);
@@ -87,9 +85,9 @@ const AuthProvider = ({ children }) => {
         localStorage.removeItem('access-token');
         setLoading(false);
       }
-    }, []);
+    });
     return () => unSubscribe();
-  });
+  }, []);
 
   const authInfo = {
     user,
