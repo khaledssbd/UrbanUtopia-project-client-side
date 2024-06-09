@@ -34,10 +34,10 @@ const Coupons = () => {
             <Link
               to="/all-apartments"
               key={coupon._id}
-              className="bg-amber-600 w-full  rounded-3xl flex flex-row items-center justify-center hover:scale-[1.05] transition-all ease-in-out"
+              className="bg-amber-600 w-full  rounded-3xl flex flex-row items-center justify-center hover:scale-[1.05] transition-all ease-in-out px-2"
             >
               <div className="flex flex-col items-center justify-center">
-                <h3 className="text-black text-2xl md:text-3xl font-black">
+                <h3 className="text-black text-xl md:text-3xl font-black">
                   {coupon.discount}% OFF
                 </h3>
                 <h3 className="text-black font-semibold text-sm">
@@ -48,10 +48,12 @@ const Coupons = () => {
                 <img src={cuponDevider} alt="" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3 className="text-black text-2xl md:text-3xl font-bold">
+                <h3 className="text-black text-xl md:text-3xl font-bold">
                   {coupon.coupon}
                 </h3>
-                <h3 className="text-xl text-black">Coupon Code</h3>
+                <h3 className="text-black font-semibold text-sm md:text-xl">
+                  Coupon Code
+                </h3>
               </div>
             </Link>
           ))}
