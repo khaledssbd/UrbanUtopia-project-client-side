@@ -67,8 +67,7 @@ const ManageMembers = () => {
         <title>UrbanUtopia | Manage Members</title>
       </Helmet>
       <div className="flex justify-evenly">
-        <h3 className="text-4xl">Manage Members</h3>
-        <h3 className="text-4xl">Total Members: {allMembers.length}</h3>
+        <h3 className="text-xl md:text-4xl">Manage Members ({allMembers.length})</h3>
       </div>
       <div>
         {allMembers.length > 0 ? (
