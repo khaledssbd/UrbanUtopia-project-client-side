@@ -45,8 +45,7 @@
 - All Device Responsive
 - Loading data in a amazing way with no bug using TanStack Query
 - axiosSecure to force logout a hacker who wants to ge others data
-- CRUD or REST(Representational State Transfer) API(Application Programming
-  Interface) support with post get put delete requests
+- CRUD or REST(Representational State Transfer) API(Application Programming Interface) support with post get put delete requests
 - Custom API and Server configuration with database
 - tailwind CSS
 - Awesome dark theme support
