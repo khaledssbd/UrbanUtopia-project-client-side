@@ -50,7 +50,7 @@ const AdminProfile = () => {
             </div>
             <div className="stat-title">Available Apartments</div>
             <div className="stat-value">
-              {stats.availableApartmentsParcent}%
+              {stats.availableApartmentsPercent}%
             </div>
             <div className="stat-desc">Jan 1st - Today</div>
           </div>
@@ -61,7 +61,7 @@ const AdminProfile = () => {
             </div>
             <div className="stat-title">Unavailable Apartments</div>
             <div className="stat-value">
-              {stats.unAvailableApartmentsParcent}%
+              {stats.unavailableApartmentsPercent}%
             </div>
             <div className="stat-desc">Jan 1st - Today</div>
           </div>

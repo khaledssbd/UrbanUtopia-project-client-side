@@ -2,9 +2,9 @@
 
 # Assignment Category/variant: Assignment12_category_0012 (BUILDING MANAGEMENT(Single building))
 
-# Admin username:
+# Admin username: Khaled Siddique
 
-# Admin Password:
+# Admin Password: Sssssss@22
 
 ## Live site:
 
