@@ -197,7 +197,7 @@ const AllApartments = () => {
             key={btnNum}
             className={`hidden ${
               currentPage === btnNum ? 'bg-blue-600 text-white' : 'bg-blue-200'
-            } px-4 py-2 mx-1 transition-colors duration-300 transform  rounded-md sm:inline hover:bg-blue-500  hover:text-white`}
+            } px-4 py-2 mx-1 transition-colors duration-300 transform  rounded-md sm:inline hover:bg-blue-500 text-black hover:text-white`}
           >
             {btnNum}
           </button>
