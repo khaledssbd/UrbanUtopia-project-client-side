@@ -28,14 +28,13 @@ const markers = [
 
 const Location = () => {
   return (
-    <div className="my-32">
-      <h3 className='my-10 text-2xl md:text-3xl font-bold'>Find us on Map</h3>
+    <div className="my-32 mx-6">
+      <h3 className="my-10 text-2xl md:text-3xl font-bold">Find us on Map</h3>
       <MapContainer
         center={[23.020182, 91.40077]}
         zoom={13}
         className="w-full h-screen rounded-2xl border border-black z-10"
       >
-
         {/* OPEN STREEN MAPS TILES */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -47,7 +46,7 @@ const Location = () => {
           attribution='Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"
         />
-        
+
         {/* GOOGLE MAPS TILES */}
         <TileLayer
           attribution="Google Maps"
