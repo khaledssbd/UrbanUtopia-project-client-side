@@ -10,11 +10,11 @@ import toast from 'react-hot-toast';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import xButtonSVG from '../../assets/x-button.svg';
 import { TbFidgetSpinner } from 'react-icons/tb';
+import axios from 'axios';
 
 // for export pdf
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
-import axios from 'axios';
 
 // for image upload to imgbb
 const image_hosting_key = import.meta.env.VITE_IMGBB_HOSTING_KEY;

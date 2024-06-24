@@ -11,16 +11,18 @@ import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import Loading from '../../components/AllLootie/Loading';
 import axios from 'axios';
-import useAxiosPublic from '../../hooks/useAxiosPublic';
 
 const image_hosting_key = import.meta.env.VITE_IMGBB_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const Register = () => {
   const [registering, setRegistering] = useState(false);
-  const axiosPublic = useAxiosPublic();
 
-  const { register, handleSubmit, formState: { errors }} = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const {
     user,
@@ -61,32 +63,17 @@ const Register = () => {
 
       await createUser(email, password);
       await updateUserProfile(name, imageUrl);
+      setRegistering(false);
+      logOut();
 
-      const userData = {
-        name,
-        email,
-        accountCreatedAt: new Date(),
-        role: 'user',
-        floor: 'none',
-        block: 'none',
-        room: 'none',
-      };
-      const { data } = await axiosPublic.post('/user', userData);
-
-      if (data.insertedId) {
-        // await verifyUser(result.user);
-        setRegistering(false);
-        logOut();
-
-        navigate('/login');
-        Swal.fire({
-          title: 'Account created!',
-          text: 'Login Now!.',
-          icon: 'success',
-          showConfirmButton: false,
-          timer: 7000,
-        });
-      }
+      navigate('/login');
+      Swal.fire({
+        title: 'Account created!',
+        text: 'Login Now!.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 7000,
+      });
     } catch (error) {
       setRegistering(false);
       if (error.message === 'Firebase: Error (auth/email-already-in-use).') {
@@ -108,22 +95,9 @@ const Register = () => {
     setRegistering(true);
     await signInWithSocial(provider);
 
-    const userData = {
-      name: user?.displayName,
-      email: user?.email,
-      accountCreatedAt: new Date(),
-      role: 'user',
-      floor: 'none',
-      block: 'none',
-      room: 'none',
-    };
-    const { data } = await axiosPublic.post('/user', userData);
-
-    if (data.insertedId) {
-      setRegistering(false);
-      navigate(location?.state ? location.state : '/');
-      toast.success('Successfully registered');
-    }
+    setRegistering(false);
+    navigate(location?.state ? location.state : '/');
+    toast.success('Successfully registered');
   };
 
   if (registering) {

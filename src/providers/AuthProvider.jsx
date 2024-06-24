@@ -71,15 +71,30 @@ const AuthProvider = ({ children }) => {
     setLoading(false);
   };
 
+  // save user
+  const saveUser = async user => {
+    const userData = {
+      email: user?.email,
+      accountCreatedAt: new Date(),
+      role: 'user',
+      floor: 'none',
+      block: 'none',
+      room: 'none',
+    };
+    const { data } = await axiosPublic.put('/user', userData);
+    return data;
+  };
+
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, currentUser => {
       const userEmail = currentUser?.email || user?.email;
       const objectEmail = { email: userEmail };
       setUser(currentUser);
-      
+
       // if user exists then issue a token
       if (currentUser) {
         getToken(objectEmail);
+        saveUser(currentUser);
         setLoading(false);
       } else {
         localStorage.removeItem('access-token');
