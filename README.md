@@ -23,7 +23,7 @@ Certainly! Here are the steps for running a React project locally that you can i
 
 ## Getting Started
 
-These instructions will help you set up and run your React project on your local machine for development and testing purposes.
+To run this React project on your local machine for development and testing purposes follow the instructions-
 
 ### Prerequisites
 
@@ -61,11 +61,11 @@ Before you begin, ensure you have the following installed on your local machine:
 # Key Features:
 
 - Admin can post a new apartment info
-- User can apply for the agreement for a n apartment
+- User can apply for the agreement for an apartment
 - Admin can see, accept and reject the agreement
 - If admin accepts the agreement the agreement will be marked as checked, the
   apartment status will be unavailable, the user role will be changed to Member
-- The member can pay rent for the apartment
+- The member can pay rent for the apartment using Stripe gateway
 - If the admin rejects the agreement the user role will not be changed, but the
   agreement will be marked as checked
 - Admin can remove the Member. Then the role will be changed to User
