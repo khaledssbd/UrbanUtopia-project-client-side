@@ -31,18 +31,13 @@
 - All Device Responsive
 - Loading data in a amazing way with no bug using TanStack Query
 - axiosSecure to force logout a hacker who wants to ge others data
-- CRUD or REST(Representational State Transfer) API(Application Programming
-  Interface) support with post get put delete requests
-- Custom API and Server configuration with database
 - Awesome dark theme support
-- Toast Message and sweet-alert2 for notifications
 - react-responsive-carousel, aos Implementation for better UI
 - jspdf for pdf downlaod
 - Environment Variable configuration to save admin data from hackers
 - Regex with Valid email, Uppercase letters, lowercase letters and 6 characters
   in password
 - PrivateRoute, adminRoute, memberRoute to stop one to browse others pages
-- Different Dashboard for Admin, Member and user
 - Local Storage and API post configuration with Protected route
 - jwt configuration to configure security
 - react-hook-form in registration
