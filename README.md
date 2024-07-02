@@ -83,7 +83,7 @@
 
 ---
 
-## Getting Started
+# Getting Started
 
 To run this React project on your local machine follow the instructions-
 
