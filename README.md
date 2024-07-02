@@ -1,7 +1,5 @@
 # UrbanUtopia
 
-# Assignment Category/variant: Assignment12_category_0012 (BUILDING MANAGEMENT(Single building))
-
 # Admin username: Khaled Siddique
 
 # Admin Password: Sssssss@22
@@ -11,8 +9,52 @@
 - Click here- [UrbanUtopia on firebase](https://urbanutopia-by-khaled.web.app)
 - Click here- [UrbanUtopia on vercel](https://urbanutopia-by-khaled.vercel.app)
 - Click here- [UrbanUtopia on surge](https://urbanutopia-by-khaled.surge.sh)
-- Click here-
-  [UrbanUtopia on netlify](https://urbanutopia-by-khaled.netlify.app)
+- Click here- [UrbanUtopia on netlify](https://urbanutopia-by-khaled.netlify.app)
+
+- [Client-Repository](https://github.com/khaledssbd/UrbanUtopia-project-client-side)
+
+- [Server-Repository](https://github.com/khaledssbd/UrbanUtopia-project-server-side)
+
+Certainly! Here are the steps for running a React project locally that you can include in your `README.md`:
+
+---
+
+## Getting Started
+
+These instructions will help you set up and run your React project on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your local machine:
+
+- [Node.js](https://nodejs.org/en/download/) (which includes npm)
+- [Git](https://git-scm.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   Open your terminal and run the following command to clone the repository:
+
+   ```bash
+   git clone https://github.com/khaledssbd/UrbanUtopia-project-client-side
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd UrbanUtopia-project-client-side
+   ```
+
+3. **Install dependencies:**
+
+   Run the following command to install all necessary dependencies:
+
+   ```bash
+   npm install
+   ```
+
+
 
 # Key Features:
 
