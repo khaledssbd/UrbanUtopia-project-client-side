@@ -56,6 +56,16 @@ Before you begin, ensure you have the following installed on your local machine:
    npm install
    ```
 
+4. **Start the development server:**
+
+   Once the dependencies are installed, you can start the development server with:
+
+   ```bash
+   npm run dev
+   ```
+
+   This will run the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
 # Key Features:
 
 - Admin can post a new apartment info
