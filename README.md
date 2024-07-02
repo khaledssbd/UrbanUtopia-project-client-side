@@ -1,9 +1,5 @@
 # UrbanUtopia
 
-# Admin username: Khaled Siddique
-
-# Admin Password: Sssssss@22
-
 ## Live site:
 
 - Click here- [UrbanUtopia on firebase](https://urbanutopia-by-khaled.web.app)
@@ -57,13 +53,15 @@ Before you begin, ensure you have the following installed on your local machine:
 
 4. **Start the development server:**
 
-   Once the dependencies are installed, you can start the development server with:
+   Once the dependencies are installed, you can start the development server
+   with:
 
    ```bash
    npm run dev
    ```
 
-   This will run the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+   This will run the app in development mode. Open
+   [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 # Key Features:
 
