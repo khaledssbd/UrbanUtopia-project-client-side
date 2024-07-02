@@ -9,7 +9,8 @@
 - Click here- [UrbanUtopia on firebase](https://urbanutopia-by-khaled.web.app)
 - Click here- [UrbanUtopia on vercel](https://urbanutopia-by-khaled.vercel.app)
 - Click here- [UrbanUtopia on surge](https://urbanutopia-by-khaled.surge.sh)
-- Click here- [UrbanUtopia on netlify](https://urbanutopia-by-khaled.netlify.app)
+- Click here-
+  [UrbanUtopia on netlify](https://urbanutopia-by-khaled.netlify.app)
 
 ## GitHub Repository:
 
@@ -17,13 +18,12 @@
 
 - [Server-Repository](https://github.com/khaledssbd/UrbanUtopia-project-server-side)
 
-Certainly! Here are the steps for running a React project locally that you can include in your `README.md`:
-
 ---
 
 ## Getting Started
 
-To run this React project on your local machine for development and testing purposes follow the instructions-
+To run this React project on your local machine for development and testing
+purposes follow the instructions-
 
 ### Prerequisites
 
@@ -56,8 +56,6 @@ Before you begin, ensure you have the following installed on your local machine:
    npm install
    ```
 
-
-
 # Key Features:
 
 - Admin can post a new apartment info
@@ -89,7 +87,8 @@ Before you begin, ensure you have the following installed on your local machine:
 - All Device Responsive
 - Loading data in a amazing way with no bug using TanStack Query
 - axiosSecure to force logout a hacker who wants to ge others data
-- CRUD or REST(Representational State Transfer) API(Application Programming Interface) support with post get put delete requests
+- CRUD or REST(Representational State Transfer) API(Application Programming
+  Interface) support with post get put delete requests
 - Custom API and Server configuration with database
 - tailwind CSS
 - Awesome dark theme support
