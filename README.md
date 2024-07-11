@@ -74,7 +74,7 @@ Before you begin, ensure you have the following installed on your local machine:
 - [Node.js](https://nodejs.org/en/download/) (which includes npm)
 - [Git](https://git-scm.com/)
 
-### Installation process in Local Machine
+### Installation
 
 1. ```bash
    git clone https://github.com/khaledssbd/UrbanUtopia-project-client-side
