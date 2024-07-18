@@ -66,7 +66,7 @@ const Footer = () => {
             UrbanUtopia, Academy Road, Feni Sadar, Feni.
           </h4>
           <h4 className="text-gray-300 text-xs sm:text-sm">
-            Email: khaled@PH.com
+            Email: khaledssbd@gmail.com
           </h4>
         </div>
       </div>
